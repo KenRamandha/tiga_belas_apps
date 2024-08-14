@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555932525222",
+    "project_id": "tiga-belas-edu-apps",
+    "storage_bucket": "tiga-belas-edu-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555932525222:android:9d63ad19eed1a8833c4a67",
+        "android_client_info": {
+          "package_name": "com.example.tiga_belas_apps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnnSIhaNYKCZ-HTI6Ad1yO-2h0k4JbdpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
