@@ -53,6 +53,12 @@ class _TextInputSignObsecureState extends State<TextInputSignObsecure> {
           colorHint: Colors.white,
           fillColour: Colors.white.withOpacity(.1),
           textColor: Colors.white,
+          validator: (value) {
+            if (value != widget.controller.text) {
+              return 'Password do not match';
+            }
+            return null;
+          },
         ),
       ],
     );

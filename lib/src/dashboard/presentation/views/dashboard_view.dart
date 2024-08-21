@@ -1,4 +1,6 @@
+import 'dart:async';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -8,6 +10,23 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () async {
+            final navigator = Navigator.of(context);
+            await FirebaseAuth.instance.signOut();
+            unawaited(
+              navigator.pushNamedAndRemoveUntil(
+                '/',
+                (route) => false,
+              ),
+            );
+          },
+          child: const Text('Keluar'),
+        ),
+      ),
+    );
   }
 }
