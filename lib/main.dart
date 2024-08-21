@@ -6,6 +6,7 @@ import 'package:tiga_belas_apps/core/common/app/providers/user_provider.dart';
 import 'package:tiga_belas_apps/core/routes/router.dart';
 import 'package:tiga_belas_apps/core/services/injection_container.dart';
 import 'package:tiga_belas_apps/firebase_options.dart';
+import 'package:tiga_belas_apps/src/dashboard/presentation/providers/dashboard_controller.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,8 +25,7 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => UserProvider()),
-        // ChangeNotifierProvider(create: (_) => DashboardController()),
-        // ChangeNotifierProvider(create: (_) => CourseOfTheDayNotofier()),
+        ChangeNotifierProvider(create: (_) => DashboardController()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

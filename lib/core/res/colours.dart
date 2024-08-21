@@ -5,4 +5,5 @@ class Colours {
 
   //Backgound
   static const backgroundBlue = Color(0xFF1835F3);
+  static const backgroundUserBlue = Color(0xFF1125AA);
 }
